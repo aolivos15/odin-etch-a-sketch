@@ -5,7 +5,39 @@ body {
 
 nav {
   background-color: rgb(255, 180, 217);
-  padding: 4px 20px;
+  padding: 4px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls-container {
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+input {
+  height: 24px;
+  width: 60px;
+  border-radius: 6px;
+  border: none;
+  padding: 4px 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding: 8px 12px;
+  background-color: turquoise;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(136, 243, 232);
 }
 
 .container {
@@ -19,10 +51,20 @@ nav {
   flex-wrap: wrap;
   height: 640px;
   width: 640px;
-  border: 1px solid #666;
+  /* border: 1px solid #666; */
 }
 
 .square {
-  border: 1px solid #666;
   flex: 1 1 auto;
+  box-sizing: border-box;
+  border-top: 1px solid #666;
+  border-left: 1px solid #666;
+}
+
+.border-right {
+  border-right: 1px solid #666;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #666;
 }
