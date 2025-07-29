@@ -3,9 +3,10 @@ const defaultSize = 16;
 const grid = document.querySelector(".grid-container");
 const resizeBtn = document.querySelector("#resize-btn");
 const resizeInput = document.querySelector("#resize-input");
+const colorSelector = document.querySelector("#color-selector");
 
 const colorSquare = (square) => {
-  square.style.backgroundColor = "turquoise";
+  square.style.backgroundColor = colorSelector.value;
 }
 
 const clearSquare = (square) => {

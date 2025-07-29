@@ -13,17 +13,30 @@ nav {
 .controls-container {
   padding: 10px;
   display: flex;
-  gap: 20px;
+  gap: 40px;
+  align-items: center;
+}
+
+.input-container {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
   align-items: center;
 }
 
 input {
   height: 24px;
-  width: 60px;
+  width: 50px;
   border-radius: 6px;
   border: none;
   padding: 4px 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="color"] {
+  height: 30px;
+  width: 50px;
+  padding: 2px 4px;
 }
 
 button {
@@ -59,6 +72,7 @@ button:hover {
   box-sizing: border-box;
   border-top: 1px solid #666;
   border-left: 1px solid #666;
+  cursor: pointer;
 }
 
 .border-right {
